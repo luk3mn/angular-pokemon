@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    --bg-primary: #001524;
+    --bg-secondary: #78290F;
+    --bg-card: #15616D;
+    --font-primary: #FFECD1;
+    --properties-card: #FF7D00;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--bg-primary);
+    color: var(--font-primary);
+    height: 100vh;
+}
