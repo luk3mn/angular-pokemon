@@ -30,7 +30,7 @@ export class CardComponent implements OnInit {
 
   getPokemon(searchName:string) {
 
-    this.service.getPokemon(searchName).subscribe({
+    this.service.getPokemon(searchName.toLowerCase()).subscribe({
       next: (res) => {
         this.pokemon = {
           id: res.id,
